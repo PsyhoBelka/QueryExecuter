@@ -23,6 +23,7 @@ public class Starter {
 					}
 				}
 			}
+			statement.close();
 		}
 		catch (SQLException e) {
 			e.printStackTrace();
@@ -43,6 +44,7 @@ public class Starter {
 				}
 			}
 			System.out.println();
+			resultSet.close();
 		}
 		catch (SQLException e) {
 			e.printStackTrace();
